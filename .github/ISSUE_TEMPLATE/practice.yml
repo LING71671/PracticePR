@@ -1,0 +1,27 @@
+name: 练习任务
+description: 为自己的练习记录或文档改进创建任务。
+title: "[练习] "
+labels: [practice]
+body:
+  - type: textarea
+    id: background
+    attributes:
+      label: 背景与目标
+      description: 想解决什么问题，或准备完成哪项练习？
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: 修改范围
+      description: 列出准备新增或修改的文件，以及具体内容。
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 验收条件
+      description: 用任务列表写明如何确认完成，例如文件路径正确、模板已填完、预览正常。
+      placeholder: "- [ ] "
+    validations:
+      required: true
